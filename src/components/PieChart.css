@@ -1,0 +1,70 @@
+
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pie-chart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; 
+  position: relative;
+  /* transition: transform 0.3s ease; */
+  transform: rotate(-90deg); 
+}
+
+.slice {
+  text-align: center;
+  width: 150%;
+  height: 46vh;
+  position: absolute;
+  clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 0% 100%);
+  transition: transform 0.3s ease;
+  transform-origin: 50% 50%;
+  border-radius: 50%;
+}
+
+.slice:nth-child(1) {
+  background-color: #3498db;
+  /* transform: polygon(0deg); */
+}
+
+.slice:nth-child(2) {
+  background-color: #e74c3c;
+  /* transform: polygon(0deg); */
+}
+
+.slice:nth-child(3) {
+  background-color: #27ae60;
+  /* transform: rotate(0deg); */
+}
+
+.slice:nth-child(4) {
+  background-color: #f1c40f;
+  /* transform: rotate(0deg); */
+}
+.slice:nth-child(5) {
+  background-color: pink;
+}
+
+
+.label {
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  /* transform: translate(1%, 50%); */
+  font-size: 14px;
+  color: black;
+}
+.percentage{
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  /* transform: translate(1%, 50%); */
+  font-size: 14px;
+  color: black;
+}
+
+
