@@ -1,70 +1,44 @@
+text {
+  font-size: 4px; 
+  /* Adjust font size as needed */
+  /* font-weight: bold; */
+  fill: black; /* Text color */
+  dominant-baseline: central; /* Vertical alignment */
+  text-anchor: middle; /* Horizontal alignment */
+}
 
+/* Style for the SVG container */
 .pie-chart-container {
+  width: 10%;
+  margin: 20px;
+  margin-top: -280px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+.pie-chart{
+  margin: 350px;
+  margin-right: -1500px;
+  margin-bottom: -1500px;
 }
 
-.pie-chart {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%; 
-  position: relative;
-  /* transition: transform 0.3s ease; */
-  transform: rotate(-90deg); 
+/* Style for the legend (optional) */
+.legend {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px; /* Adjust the margin as needed */
 }
 
-.slice {
-  text-align: center;
-  width: 150%;
-  height: 46vh;
-  position: absolute;
-  clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 0% 100%);
-  transition: transform 0.3s ease;
-  transform-origin: 50% 50%;
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* Adjust the margin as needed */
+}
+
+.legend-color {
+  width: 20px; /* Adjust the width as needed */
+  height: 20px;
+  margin-right: 8px; /* Adjust the margin as needed */
   border-radius: 50%;
 }
-
-.slice:nth-child(1) {
-  background-color: #3498db;
-  /* transform: polygon(0deg); */
-}
-
-.slice:nth-child(2) {
-  background-color: #e74c3c;
-  /* transform: polygon(0deg); */
-}
-
-.slice:nth-child(3) {
-  background-color: #27ae60;
-  /* transform: rotate(0deg); */
-}
-
-.slice:nth-child(4) {
-  background-color: #f1c40f;
-  /* transform: rotate(0deg); */
-}
-.slice:nth-child(5) {
-  background-color: pink;
-}
-
-
-.label {
-  position: absolute;
-  top: 60%;
-  left: 55%;
-  /* transform: translate(1%, 50%); */
-  font-size: 14px;
-  color: black;
-}
-.percentage{
-  position: absolute;
-  top: 60%;
-  left: 40%;
-  /* transform: translate(1%, 50%); */
-  font-size: 14px;
-  color: black;
-}
-
 
